@@ -1,0 +1,17 @@
+# Example Store
+
+> Example Store sells widgets with same-day dispatch across the EU; this file
+> indexes the pages a language model needs to answer questions about us.
+
+## Core
+- [Products](https://example.com/products): full catalog with prices and availability
+- [Shipping & returns](https://example.com/shipping): delivery times, costs, return policy
+- [About](https://example.com/about): who we are, contact details
+
+## Docs
+- [API documentation](https://example.com/docs/api): REST API for orders and inventory
+- [FAQ](https://example.com/faq): common questions, answered directly
+
+## Legal
+- [Terms of service](https://example.com/terms)
+- [Privacy policy](https://example.com/privacy)

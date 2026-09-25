@@ -1,0 +1,64 @@
+# robots.txt — explicitly allow every major AI crawler and agent.
+# Explicit per-bot groups beat relying on `User-agent: *` alone: several
+# bot-management layers key on the presence of these tokens, and an explicit
+# Allow documents your intent to auditors and to the bots themselves.
+# Keep your real Disallow paths (admin, account areas, APIs) in every group.
+
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# ── AI search (grounds live answers, cites you) ──────────────
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin
+
+# ── AI agents acting for one user ────────────────────────────
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+
+User-agent: Claude-User
+Allow: /
+Disallow: /admin
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /admin
+
+# ── Model-training crawlers ──────────────────────────────────
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /admin
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+Disallow: /admin
+
+Sitemap: https://example.com/sitemap.xml

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "example-store": {
+      "url": "https://example.com/mcp/",
+      "transport": "streamable-http",
+      "description": "Search the catalog, check availability, and read order status."
+    }
+  }
+}

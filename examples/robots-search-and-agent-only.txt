@@ -1,0 +1,61 @@
+# robots.txt — allow AI search + per-user agents, opt out of model training.
+# A common middle-ground policy: stay visible in AI answers and usable by
+# browsing agents, while declining training-data collection.
+# Note: Google-Extended and Applebot-Extended are pure training controls —
+# disallowing them does NOT affect Google Search or Applebot search indexing.
+
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# ── AI search: ALLOWED (live answers with citations back to you) ──
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /admin
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /admin
+
+User-agent: Applebot
+Allow: /
+Disallow: /admin
+
+# ── AI agents acting for one user: ALLOWED ────────────────────────
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /admin
+
+User-agent: Claude-User
+Allow: /
+Disallow: /admin
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /admin
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /admin
+
+# ── Model-training crawlers: OPTED OUT ────────────────────────────
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://example.com/sitemap.xml
